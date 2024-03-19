@@ -1,0 +1,134 @@
+/******* Bootstrap Theming ********/
+
+$primary: #00B87B;
+$secondary: #314355;
+$light: #EEEEEE;
+$dark: #2C3E50;
+
+$font-family-base: 'Heebo', sans-serif;
+
+$body-bg: $dark;
+
+$body-color: $light;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$enable-rounded: false;
+
+$border-color: rgba(256, 256, 256, .1);
+
+$border-radius: 0px;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+.ftco-section{
+	padding: 7em 0;
+}
+
+.ftco-no-pt{
+	padding-top: 0;
+}
+.ftco-no-pb{
+	padding-bottom: 0;
+}
+//HEADING SECTION
+.heading-section{
+	font-size: 28px;
+	color: $black;
+}
+
+//COVER BG
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.form-control {
+	height: 44px;
+	background: $white;
+	color: rgba(0,0,0,.8);
+	font-size: 14px;
+	border-radius: 2px;
+	box-shadow: none !important;
+	border: none;
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: rgba(0,0,0,.3) !important;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(0,0,0,.3) !important;
+	}
+	&:-ms-input-placeholder { /* IE 0+ */
+	  color: rgba(0,0,0,.3) !important;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: rgba(0,0,0,.3) !important;
+	}
+	&:focus, &:active {
+		border-color: $primary !important;
+	}
+}
+textarea.form-control {
+	height: inherit!important;
+}
+
+.wrapper{
+	width: 100%;
+}
+.contact-wrap{
+	background: #e8edf0;
+}
+
+.contactForm{
+	.label{
+		color: $black;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.form-control{
+		border: none;
+	}
+}
+
+// Forms style
+#contactForm {
+	.error {
+		color: red;
+		font-size: 12px;
+	}
+	.form-control {
+		font-size: 16px;
+	}
+}
+#message {
+	resize: vertical;
+}
+#form-message-warning, #form-message-success {
+	display: none;
+}
+#form-message-warning {
+	color: red;
+}
+#form-message-success {
+	color: $success;
+	font-size: 18px;
+	font-weight: 500;
+}
+.submitting {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	display: none;
+	font-size: 16px;
+	font-weight: 500;
+	color: $primary;
+}
+
+@import "bootstrap/scss/bootstrap";
