@@ -200,122 +200,18 @@
   opacity: 1;
 }
 
-/* .ftco-section {
-  padding: 7em 0;
+.contact-item {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light);
+  color: var(--primary);
 }
 
-.ftco-no-pt {
-  padding-top: 0;
+
+.contact-item:hover{
+  background: var(--primary);
+  color: var(--light);
 }
-
-.ftco-no-pb {
-  padding-bottom: 0;
-}
-
-.form-control {
-  height: 44px;
-  background: #fff;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 14px;
-  border-radius: 2px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: none;
-}
-
-.form-control::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari 
-  color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.form-control::-moz-placeholder {
-  /* Firefox 19+ 
-  color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.form-control:-ms-input-placeholder {
-  /* IE 0+ 
-  color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.form-control:-moz-placeholder {
-  /* Firefox 18- 
-  color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.form-control:focus,
-.form-control:active {
-  border-color: #2553b8 !important;
-}
-
-textarea.form-control {
-  height: inherit !important;
-}
-
-.wrapper {
-  width: 100%;
-}
-
-.contact-wrap {
-  background: #e8edf0;
-}
-
-.contactForm .label {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.contactForm .form-control {
-  border: none;
-}
-
-#map {
-  width: 100%;
-}
-
-@media (max-width: 767.98px) {
-  #map {
-    height: 300px;
-  }
-}
-
-#contactForm .error {
-  color: red;
-  font-size: 12px;
-}
-
-#contactForm .form-control {
-  font-size: 16px;
-}
-
-#message {
-  resize: vertical;
-} */
-
-#form-message-warning,
-#form-message-success {
-  display: none;
-}
-
-#form-message-warning {
-  color: red;
-}
-
-#form-message-success {
-  color: #28a745;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-/*
-.submitting {
-  float: left;
-  width: 100%;
-  padding: 10px 0;
-  display: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: #2553b8;
-} */
