@@ -203,6 +203,7 @@
 .contact-item {
   width: 75px;
   height: 75px;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary);
