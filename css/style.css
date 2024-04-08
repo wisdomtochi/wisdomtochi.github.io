@@ -203,15 +203,7 @@
 .contact-item {
   width: 75px;
   height: 75px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--light);
   color: var(--primary);
-}
-
-
-.contact-item:hover{
-  background: var(--primary);
-  color: var(--light);
 }
