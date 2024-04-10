@@ -201,8 +201,6 @@
 }
 
 .contact-item {
-  width: 6vw;
-  height: 8vw;
   display: flex;
   align-items: center;
   justify-content: center;
