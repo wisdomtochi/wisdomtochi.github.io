@@ -211,4 +211,13 @@
   align-items: center;
   justify-content: center;
   color: var(--primary);
+  font-weight: 800;
+}
+
+.contact-item h5 {
+  font-size: 16.5px;
+}
+
+.contact-item .phone-number {
+  font-size: 18px;
 }
