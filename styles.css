@@ -1,0 +1,237 @@
+:root {
+  --accent: #3b82f6;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #0f0f14, #1a1a24);
+  color: #e0e0e0;
+}
+
+body.light {
+  background: linear-gradient(135deg, #fafafa, #eaeaea);
+  color: #222;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: inherit;
+  border-bottom: 1px solid #444;
+  z-index: 1000;
+}
+
+.nav a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+.hero-content { max-width: 700px; }
+.hero h1 { font-size: 3.3rem; margin-bottom: 1rem; }
+.hero .tagline { font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem; }
+.hero .intro { font-size: 1.1rem; margin-bottom: 2rem; }
+.accent { color: var(--accent); }
+
+.cta {
+  background: var(--accent);
+  color: white;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.section { padding: 4rem 2rem; max-width: 900px; margin: auto; }
+
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  margin-top: 2rem;
+}
+
+.skill-card {
+  border: 1px solid #444;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.skill-list span {
+  background: var(--accent);
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.skill-list span:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+  border: 1px solid #444;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.project-links { margin-top: 1rem; }
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.btn.secondary { background: #333; color: var(--accent); }
+.btn:hover { opacity: 0.85; }
+
+.cert-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cert-card {
+  border: 1px solid #444;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  text-align: center;
+}
+
+.cert-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* Contact form */
+#contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #555;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background: transparent;
+  color: inherit;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+
+#contact-form button {
+  background: var(--accent);
+  color: white;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+
+#contact-form button:hover {
+  opacity: 0.85;
+}
+
+.socials {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.socials img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.socials img:hover { transform: scale(1.1); }
+
+footer {
+  text-align: center;
+  padding: 2px 0;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+}

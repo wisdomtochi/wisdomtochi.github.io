@@ -2,420 +2,222 @@
 <html lang="en">
 
 <head>
-    <!-- <met#aeb3b8et="utf-8"> -->
-    <title>Wisdom Agbasionye Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wisdom Agbasionye — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only"></span>
-        </div>
+<body class="dark">
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="logo">Wisdom Agbasionye</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle">☀️</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in">
+        Hi, I’m <span class="accent">Wisdom Agbasionye</span>
+      </h1>
+      <p class="tagline slide-up">Backend Developer</p>
+      <p class="intro slide-up-delay">
+        I design and implement scalable backend solutions that power modern web applications.
+      </p>
+      <a class="cta bounce" href="#projects">See My Work</a>
     </div>
-    <!-- Spinner End -->
+  </section>
 
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-4 sticky-lg-top vh-100">
-                <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                    <img class="w-100 img-fluid mb-4" src="img/portfolio.png" alt="Portfolio Image">
-                    <h1 class="text-primary mt-2">Wisdom Agbasionye</h1>
-                    <div class="mb-4" style="height: 22px;">
-                        <h4 class="typed-text-output d-inline-block text-light"></h4>
-                        <div class="typed-text d-none">Intern at Afiari Inc., Software Developer, Content Creator, Web Developer
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center mt-auto mb-3">
-                        <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/WisdomTochi_fx"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-secondary btn-square mx-1"
-                            href="https://web.facebook.com/profile.php?id=100089142751430"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-secondary btn-square mx-1"
-                            href="https://ng.linkedin.com/in/wisdom-agbasionye-027371262"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="d-flex align-items-end justify-content-between border-top">
-                        <a href="Utils/My CV.docx" download="Wisdom Agbasionye CV" class="btn w-50 border-end">Download
-                            CV</a>
-                        <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <!-- About Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="title pb-3 mb-5">About Me</h1>
-                    <p></p>
-                    <div class="row mb-4">
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Name:</span> Wisdom Agbasionye
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Experience:</span> 2 Years
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Phone:</span> +234 703 091 2145
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Email:</span> agbasionyewisdom@gmail.com
-                        </div>
-                        <div class="col-sm-6 py-1">
-                            <span class="fw-medium text-primary">Freelance:</span> Available
-                        </div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-md-4 col-lg-6 col-xl-4">
-                            <div class="d-flex bg-secondary p-4">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2</h1>
-                                <div class="ps-3">
-                                    <p class="mb-0">Years of</p>
-                                    <h5 class="mb-0">Experience</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-6 col-xl-4">
-                            <div class="d-flex bg-secondary p-4">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
-                                <div class="ps-3">
-                                    <p class="mb-0">Complete</p>
-                                    <h5 class="mb-0">Projects</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- About End -->
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate backend developer with a strong focus on building reliable, secure,
+      and maintainable systems. My core expertise lies in <b>C#</b> and <b>ASP.NET Core</b>,
+      where I enjoy crafting APIs and backend logic that scale with business needs.
+    </p>
+    <p>
+      Over time, I’ve worked on projects ranging from personal productivity tools
+      to more collaborative systems. Each challenge sharpened my problem-solving skills
+      and improved my ability to design clean, efficient architectures.
+    </p>
+    <p>
+      Beyond just coding, I believe in teamwork, documentation, and continuous learning.
+      My goal is to leverage technology to create solutions that simplify processes
+      and deliver real-world value.
+    </p>
+  </section>
 
-                <!-- Skills Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="title pb-3 mb-5">Skills</h1>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">HTML & CSS</p>
-                                    <p class="mb-2">94%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="94"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">Microsoft Office</p>
-                                    <p class="mb-2">92%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="92"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">Git</p>
-                                    <p class="mb-2">90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">C#</p>
-                                    <p class="mb-2">95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">SQL</p>
-                                    <p class="mb-2">89%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="89"
-                                        aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">Vanilla Javascript</p>
-                                    <p class="mb-2">80%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">ASP .Net Core</p>
-                                    <p class="mb-2">91%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="91"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">Blazor</p>
-                                    <p class="mb-2">45%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="45"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <p class="mb-2">Postman</p>
-                                    <p class="mb-2">50%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                            </div>
-                        </div>
-                </section>
-                <!-- Skills End -->
-
-                <!-- Expericence Start -->
-                <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="title pb-3 mb-5">Expericence</h1>
-                    <div class="border-start border-2 border-light pt-2 ps-5">
-                        <div class="position-relative mb-4">
-                            <h5 class="mb-1">Software Developer Intern</h5>
-                            <p class="mb-2">Afiari Inc. | <small>2024 - DATE</small></p>
-                            <p>Collaborating with the team on debugging and enhancing features of a web application
-                                using JavaScript and C# programming languages.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <h5 class="mb-1">Web Developer</h5>
-                            <p class="mb-2">Self Employed | <small>2022 - 2023</small></p>
-                            <p>Planning, organizing and executing web development projects from start to finish,
-                                ensuring the meet the necessary expectations. Creating websites that are visually
-                                appealing and are also functional.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <h5 class="mb-1">Software Developer</h5>
-                            <p class="mb-2">Self Employed | <small>2023 - DATE</small></p>
-                            <p>Designing and developing software applications. Utilizing version control systems like
-                                Github for code management and maintaining comprehensive documentation to facilitate
-                                collaboration.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <h5 class="mb-1">Photographer, Videographer & Content Creator</h5>
-                            <p class="mb-2">Rock Media IT (St. Peter's Anglican Church Olodi, Lagos.) | <small>2020 -
-                                    DATE</small></p>
-                            <p>Assist the team to ensure the smooth running of services. Also make sure that we have
-                                contents to post on our social media channels, to help people that were not in the
-                                service have an overview of what happened that day.</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- Expericence End -->
-
-                <!-- Services Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="title pb-3 mb-5">Services</h1>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="service-item">
-                                <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
-                                <h5 class="mb-2">Web Design</h5>
-                                <p class="mb-0"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="service-item">
-                                <i class="fab fa-2x fa-android mx-auto mb-4"></i>
-                                <h5 class="mb-2">Software Development</h5>
-                                <p class="mb-0"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="service-item">
-                                <i class="fa fa-2x fa-edit mx-auto mb-4"></i>
-                                <h5 class="mb-2">Content Creating</h5>
-                                <p class="mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Services End -->
-
-                <!-- Portfolio Start -->
-                <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="title pb-3 mb-5">Portfolio</h1>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-12 text-center mb-2">
-                                    <ul class="list-inline mb-4" id="portfolio-flters">
-                                        <li class="btn btn-secondary active" data-filter="*"><i
-                                                class="fa fa-star me-2"></i>All</li>
-                                        <li class="btn btn-secondary" data-filter=".first"><i
-                                                class="fa fa-laptop-code me-2"></i>Web Designs</li>
-                                        <li class="btn btn-secondary" data-filter=".second"><i
-                                                class="fa fa-mobile-alt me-2"></i>Softwares Developed</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row portfolio-container">
-                                <div class="col-md-6 mb-4 portfolio-item first">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/domplar_website.jpg"
-                                            alt="A fictional company website.">
-                                        <p class="service-item">Domplar Company Website<br>Click <a
-                                                href="https://github.com/wisdomtochi/Domplar-Company-Website-fictional">Here
-                                            </a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/unit_converter.jpg"
-                                            alt="Simple Unit Converter App.">
-                                        <p class="service-item">Unit Converter <br> Click <a
-                                                href="https://github.com/wisdomtochi/UnitConverter">Here
-                                            </a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/employee-service.jpg"
-                                            alt="A connection app to help employees of an organization interact.">
-                                        <p class="service-item">Employees Connection API<br>Click <a
-                                                href="https://github.com/wisdomtochi/EmployeeService">Here
-                                            </a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/address_book.jpg"
-                                            alt="Easy to use Address Book for Managing your Contacts.">
-                                        <p class="service-item">An Address Book<br> Click <a
-                                                href="https://github.com/wisdomtochi/Address-Book">Here
-                                            </a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/note-taker.jpg"
-                                            alt="A JavaScript app that helps take note.">
-                                        <p class="service-item">Note Taking App<br> Click <a
-                                                href="https://github.com/wisdomtochi/Note-Taker-App">Here
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/expense-tracker.jpg"
-                                            alt="An application that tracks expenses.">
-                                        <p class="service-item">Expense Tracker Application. <br>Click <a
-                                                href="https://github.com/wisdomtochi/Expense-Tracker-App">Here
-                                            </a></p>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Portfolio End -->
-
-                <!-- Contact Start -->
-                <section class="py-5 mb-4 wow fadeInUp mt-3" data-wow-delay="0.1s" id="contact">
-                    <h1 class="title pb-3 mb-5">Contact Me</h1>
-
-                    <div class="position-relative contact-item">
-                        <h5><strong>agbasionyewisdom@gmail.com</strong></h5>
-                        <p class="mb-0"></p>
-                    </div>
-                    <div class="position-relative contact-item">
-                        <p class="phone-number"><strong>+2347030912145</strong></p>
-                        <p class="mb-0"></p>
-                    </div>
-                </section>
-                <!-- Contact End -->
-
-                <!-- Footer Start -->
-                <section class="wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-secondary text-light text-center p-5">
-                        <div class="d-flex justify-content-center mb-2">
-                            <a class="btn btn-secondary btn-square mx-1" href="https://twitter.com/WisdomTochi_fx"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1"
-                                href="https://web.facebook.com/profile.php?id=100089142751430"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-secondary btn-square mx-1"
-                                href="https://ng.linkedin.com/in/wisdom-agbasionye-027371262"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </section>
-                <!-- Footer End -->
-            </div>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>🖥️ Languages</h3>
+        <div class="skill-list">
+          <span>C#</span>
+          <span>JavaScript</span>
+          <span>C</span>
+          <span>Python</span>
         </div>
+      </div>
+      <div class="skill-card">
+        <h3>⚙️ Frameworks</h3>
+        <div class="skill-list">
+          <span>ASP.NET Core MVC</span>
+          <span>Blazor</span>
+          <span>ASP.NET Core Web API</span>
+          <span>JQuery</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>🗄️ Databases</h3>
+        <div class="skill-list">
+          <span>SQL Server</span>
+          <span>MySQL</span>
+          <span>PostgreSQL</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>🛠️ Tools & Platforms</h3>
+        <div class="skill-list">
+          <span>Git</span>
+          <span>Azure</span>
+          <span>Postman</span>
+          <span>Visual Studio</span>
+          <span>GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>🚀 Soft Skills</h3>
+        <div class="skill-list">
+          <span>Problem Solving</span>
+          <span>Teamwork</span>
+          <span>Documentation</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>🏗️ Architecture & Patterns</h3>
+        <div class="skill-list">
+          <span>REST</span>
+          <span>SOLID</span>
+          <span>DDD</span>
+          <span>Microservices</span>
+          <span>Clean Architecture</span>
+        </div>
+      </div>
     </div>
+  </section>
 
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>📇 My First Website</h3>
+        <p>The very first website I built using HTML and CSS.</p>
+        <div class="project-links">
+          <a href="https://domplar-company-website-fictional.vercel.app/" target="_blank" class="btn">View Project</a>
+          <a href="https://github.com/wisdomtochi/Domplar-Company-Website-fictional" target="_blank" class="btn secondary">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>📇 Address Book App</h3>
+        <p>Web app to store and manage contacts with SQL Server backend, authentication, and authorization.</p>
+        <div class="project-links">
+          <a href="https://github.com/wisdomtochi/Address-Book" target="_blank" class="btn secondary">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>✅ Task Tracker API</h3>
+        <p>Backend API to manage tasks and productivity workflows with CRUD functionality and MySQL integration.</p>
+        <div class="project-links">
+          <a href="https://github.com/wisdomtochi/TaskTracker" target="_blank" class="btn secondary">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/popper.js"></script>
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>Introduction to SQL</h3>
+        <p class="issuer">🎓 <strong>Issued by:</strong> Simplilearn</p>
+        <p class="date">📅 <strong>Issued on:</strong> March 2024</p>
+        <a href="certificates/sql.pdf" target="_blank" class="btn cert-btn">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Introduction to Cyber Security</h3>
+        <p class="issuer">🎓 <strong>Issued by:</strong> Simplilearn</p>
+        <p class="date">📅 <strong>Issued on:</strong> April 2024</p>
+        <a href="certificates/cybersecurity.pdf" target="_blank" class="btn cert-btn">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Ethical Hacking</h3>
+        <p class="issuer">🎓 <strong>Issued by:</strong> Cisco</p>
+        <p class="date">📅 <strong>Issued on:</strong> November 2024</p>
+        <a href="certificates/ethical-hacker.pdf" target="_blank" class="btn cert-btn">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Introduction to Computer Science</h3>
+        <p class="issuer">🎓 <strong>Issued by:</strong> CS50</p>
+        <p class="date">📅 <strong>Issued on:</strong> December 2024</p>
+        <a href="certificates/CS50x.pdf" target="_blank" class="btn cert-btn">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Introduction to Artificial Intelligence</h3>
+        <p class="issuer">🎓 <strong>Issued by:</strong> Simplilearn</p>
+        <p class="date">📅 <strong>Issued on:</strong> June 2025</p>
+        <a href="certificates/a.i.pdf" target="_blank" class="btn cert-btn">View Certificate</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-form-section">
+    <h2>Let’s Connect</h2>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="https://formspree.io/f/movnrbqq" method="POST">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Social Icons -->
+    <div class="socials">
+      <a href="mailto:agbasionyewisdom@gmail.com" target="_blank"><img id="icon-email" src="icons/email-light.png"
+          alt="Email"></a>
+      <a href="https://github.com/wisdomtochi" target="_blank"><img id="icon-github" src="icons/github-light.png"
+          alt="GitHub"></a>
+      <a href="https://ng.linkedin.com/in/wisdom-agbasionye-027371262" target="_blank"><img id="icon-linkedin"
+          src="icons/linkedin-light.png" alt="LinkedIn"></a>
+      <a href="https://twitter.com/WisdomTochi_fx" target="_blank"><img id="icon-x" src="icons/x-light.png" alt="X"></a>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Wisdom Tochukwu. Built with ❤️ and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
