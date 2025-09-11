@@ -61,3 +61,19 @@ if (contactForm) {
   });
 }
 
+const toggleBtn = document.getElementById("toggle-layout");
+const cardLayout = document.getElementById("experience-cards");
+const timelineLayout = document.getElementById("experience-timeline");
+
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", () => {
+    cardLayout.classList.toggle("active");
+    timelineLayout.classList.toggle("active");
+
+    if (timelineLayout.classList.contains("active")) {
+      toggleBtn.textContent = "Switch to Card View";
+    } else {
+      toggleBtn.textContent = "Switch to Timeline View";
+    }
+  });
+}

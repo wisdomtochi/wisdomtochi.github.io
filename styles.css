@@ -110,6 +110,105 @@ body {
   opacity: 0.9;
 }
 
+/* Experience */
+#toggle-layout {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Card layout */
+.experience-grid {
+  display: none;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  max-width: 60vw;
+}
+
+.experience-grid.active {
+  display: grid;
+}
+
+.experience-card {
+  border: 1px solid #444;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.experience-card h3 {
+  margin-bottom: 0.3rem;
+  color: var(--accent);
+}
+
+.experience-card .company {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.8rem;
+}
+
+/* Timeline layout */
+.timeline {
+  display: none;
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+  border-left: 2px solid var(--accent);
+}
+
+.timeline.active {
+  display: block;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+  max-width: 60vw;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.timeline-text {
+  margin-left: 1rem;
+}
+
+.timeline-text h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.timeline-text .company {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.timeline-text p {
+  margin: 0;
+  line-height: 1.9;
+}
 
 .projects-grid {
   display: grid;
