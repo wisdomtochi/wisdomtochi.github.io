@@ -77,3 +77,42 @@ if (toggleBtn) {
     }
   });
 }
+
+// Mobile menu toggle
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+const navItems = navLinks.querySelectorAll("a");
+
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+
+    if (navLinks.classList.contains("show")) {
+      menuToggle.textContent = "✖";
+      menuToggle.classList.add("open");
+    } else {
+      menuToggle.textContent = "☰";
+      menuToggle.classList.remove("open");
+    }
+  });
+
+  navItems.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+      menuToggle.textContent = "☰";
+      menuToggle.classList.remove("open");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (
+      navLinks.classList.contains("show") &&
+      !navLinks.contains(e.target) &&
+      !menuToggle.contains(e.target)
+    ) {
+      navLinks.classList.remove("show");
+      menuToggle.textContent = "☰";
+      menuToggle.classList.remove("open");
+    }
+  });
+}

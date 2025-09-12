@@ -12,7 +12,10 @@
   <!-- Navbar -->
   <header class="nav">
     <div class="logo">Wisdom Agbasionye</div>
-    <nav>
+
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+
+    <nav id="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
@@ -20,8 +23,10 @@
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
+
     <button id="theme-toggle">☀️</button>
   </header>
+
 
   <!-- Hero -->
   <section class="hero">
@@ -131,11 +136,11 @@
         <h3>Backend Developer (Intern)</h3>
         <p class="company">Afiari Inc. • July 2024 – Present</p>
         <ul>
-            <li>Developed backend systems using <b>ASP.NET Core</b> and <b>C#</b>.</li>
-            <li>Implemented the <b>MediatR pattern</b> and <b>CQRS</b> for scalable architecture.</li>
-            <li>Built RESTful APIs for the <b>Market Intelligence Tool</b> used by enterprise businesses.</li>
-            <li>Collaborated with the team to build the <b>Flexipay software</b>.</li>
-          </ul>
+          <li>Developed backend systems using <b>ASP.NET Core</b> and <b>C#</b>.</li>
+          <li>Implemented the <b>MediatR pattern</b> and <b>CQRS</b> for scalable architecture.</li>
+          <li>Built RESTful APIs for the <b>Market Intelligence Tool</b> used by enterprise businesses.</li>
+          <li>Collaborated with the team to build the <b>Flexipay software</b>.</li>
+        </ul>
       </div>
 
       <div class="experience-card">
@@ -211,7 +216,7 @@
         <h3>📇 My First Website</h3>
         <p>The very first website I built using HTML and CSS.</p>
         <div class="project-links">
-          <a href="https://domplar-company-website-fictional.vercel.app/" target="_blank" class="btn">View Project</a>
+          <a href="https://domplar-company-website-fictional.vercel.app/" target="_blank" class="btn">View Site</a>
           <a href="https://github.com/wisdomtochi/Domplar-Company-Website-fictional" target="_blank"
             class="btn secondary">GitHub</a>
         </div>
@@ -288,8 +293,8 @@
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
       </div>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <input type="text" name="subject" placeholder="Subject" class="subject" required>
+      <textarea name="message" rows="9" placeholder="Your Message" class="message" required></textarea>
       <button type="submit" class="btn">Send Message</button>
     </form>
 
